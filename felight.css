@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  background-color: #122b46;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 350px);
+  gap: 10px;
+  margin: 60px;
+}
+.box {
+  /* height: 100px;
+    width: 100px; */
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  display: grid;
+  gap: 2px;
+}
+
+/* cards shardos*/
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img,
+.box5 img,
+.box6 img,
+.box7 img,
+.box8 img {
+  align-items: center;
+}
+
+.box1 h3 {
+  margin-left: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  word-spacing: 10px;
+}
+.box1 > p,
+.box2 > p,
+.box3 > p,
+.box4 > p,
+.box5 > p,
+.box6 > p,
+.box7 > p,
+.box8 > p {
+  color: #008000;
+  margin-left: 40px;
+}
+.box1 .photo,
+.box2 .photo,
+.box3 .photo,
+.box4 .photo,
+.box5 .photo,
+.box6 .photo,
+.box7 .photo,
+.box8 .photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: #122b46;
+}
+
+.box1 .photo img,
+.box2 .photo img,
+.box3 .photo img,
+.box4 .photo img,
+.box5 .photo img,
+.box6 .photo img,
+.box7 .photo img,
+.box8 .photo img {
+  border-radius: 50%;
+  width: 30px;
+  margin-left: 40px;
+}
+
+.box1 h3:hover,
+.photo p:hover,
+.box2 h3:hover,
+.photo p:hover,
+.box3 h3:hover,
+.photo p:hover,
+.box4 h3:hover,
+.photo p:hover,
+.box5 h3:hover,
+.photo p:hover,
+.box6 h3:hover,
+.photo p:hover,
+.box7 h3:hover,
+.photo p:hover,
+.box8 h3:hover,
+.photo p:hover {
+  color: #fe8100;
+}
+
+.box2 h3,
+.box3 h3,
+.box4 h3,
+.box5 h3,
+.box6 h3,
+.box7 h3,
+.box8 h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+/* for phone */
+@media (max-width: 479px) {
+  h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    width: 100vw;
+    position: relative;
+    margin: 0px auto;
+  }
+  .box1 img,
+  .box2 img,
+  .box3 img,
+  .box4 img,
+  .box5 img,
+  .box6 img,
+  .box7 img,
+  .box8 img {
+    width: 100vw;
+    align-items: center;
+  }
+}
+/* for tablets */
+
+@media (480px <= width <= 820px) {
+  h1 {
+    width: 100vw;
+    text-align: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    position: relative;
+    margin: 0px auto;
+  }
+}
+
+/* for tablets screen size 820 to 1020 laptop screen size */
+
+@media (830px <= width <= 1024px) {
+  h1 {
+    width: 100vw;
+    text-align: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    position: relative;
+    margin: 0px auto;
+  }
+}
+/* for laptop and desktop size screen */
+@media (min-wdith: 1025px) {
+  h1 {
+    width: 100vw;
+    align-items: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 350px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    position: relative;
+    margin: auto;
+  }
+}
